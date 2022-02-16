@@ -6,7 +6,7 @@
 /*   By: ael-hiou <ael-hiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 21:48:26 by ael-hiou          #+#    #+#             */
-/*   Updated: 2021/12/18 18:10:23 by ael-hiou         ###   ########.fr       */
+/*   Updated: 2022/02/16 11:18:13 by ael-hiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,7 @@ char	*check_isvalidemap(int fd)
 	return (NULL);
 }
 
-void	ft_create_elements(t_mlx_lst *list, \
-		int positionx, int positiony, char *imagepath)
+void	ft_create_elements(t_mlx_lst *list, int positionx, int positiony, char *imagepath)
 {
 	int	width;
 	int	height;
@@ -49,8 +48,7 @@ void	ft_create_elements(t_mlx_lst *list, \
 	width = 0;
 	height = 0;
 	list->img = mlx_xpm_file_to_image(list->mlx, imagepath, &width, &height);
-	mlx_put_image_to_window (list->mlx, list->win, \
-			list->img, positionx, positiony);
+	mlx_put_image_to_window (list->mlx, list->win, list->img, positionx, positiony);
 }
 
 int	ft_collectibles_counter(char **str)
@@ -80,8 +78,7 @@ void	ft_create_player(t_mlx_lst *list, int i, int j)
 {
 	list->playerx = i;
 	list->playery = j;
-	ft_create_elements(list, j * MAP_UNITY, i \
-			* MAP_UNITY, PLAYER_IMG);
+	ft_create_elements(list, j * MAP_UNITY, i * MAP_UNITY, PLAYER_IMG);
 }
 
 void	ft_check_enemy_facing(t_mlx_lst *list, int direction, char a)

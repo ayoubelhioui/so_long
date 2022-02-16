@@ -6,7 +6,7 @@
 /*   By: ael-hiou <ael-hiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 17:00:43 by ael-hiou          #+#    #+#             */
-/*   Updated: 2021/12/18 17:51:11 by ael-hiou         ###   ########.fr       */
+/*   Updated: 2022/02/16 11:17:08 by ael-hiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,18 +64,15 @@ int			ft_check(char *str, char a);
 int			ft_check_wall(char *s);
 int			ft_collectibles_counter(char **str);
 int			ft_check_for_characters(t_list *head);
-void		ft_move_x(t_mlx_lst *list, int \
-collectible_count, int direction, int *movescounter);
-void		ft_move_y(t_mlx_lst *list, int \
-collectible_count, int direction, int *movescounter);
+void		ft_move_x(t_mlx_lst *list, int collectible_count, int direction, int *movescounter);
+void		ft_move_y(t_mlx_lst *list, int collectible_count, int direction, int *movescounter);
 int			check_player_counter(t_list *head);
 void		ft_check_enemy_facing(t_mlx_lst *list, int direction, char a);
 void		ft_create_player(t_mlx_lst *list, int i, int j);
 void		ft_increment(char character, t_list *head);
 void		ft_which_one_to_increment(char a, t_list *head);
 char		*check_isvalidemap(int fd);
-void		ft_create_elements(t_mlx_lst *list, int \
-positionx, int positiony, char *imagepath);
+void		ft_create_elements(t_mlx_lst *list, int positionx, int positiony, char *imagepath);
 char		*ft_itoa(int n);
 int			ft_moveit(int key, t_mlx_lst *list);
 char		*fill(char *str, long n, int size);

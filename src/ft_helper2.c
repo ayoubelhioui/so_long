@@ -6,7 +6,7 @@
 /*   By: ael-hiou <ael-hiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 21:46:01 by ael-hiou          #+#    #+#             */
-/*   Updated: 2021/12/18 17:52:37 by ael-hiou         ###   ########.fr       */
+/*   Updated: 2022/02/16 11:17:47 by ael-hiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,7 @@ int	ft_check_for_characters(t_list *head)
 	{
 		if (temp ->character == 'P' && temp ->counter == 0)
 		{
-			printf("Error\nYou May Have Multiple Players,\
- Or May You Dont Have A Player !!");
+			printf("Error\nYou May Have Multiple Players, Or May You Dont Have A Player !!");
 			exit(1);
 		}
 		if (temp ->character == 'E' && temp ->counter == 0)
@@ -74,8 +73,7 @@ int	check_player_counter(t_list *head)
 	{
 		if (temp ->character == 'P' && temp ->counter > 1)
 		{
-			printf("Error\nYou May Have Multiple Players, \
-					Or You May Have No Player !!");
+			printf("Error\nYou May Have Multiple Players, Or You May Have No Player !!");
 			exit(1);
 		}
 		temp = temp ->next;
